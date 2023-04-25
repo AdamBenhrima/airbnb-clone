@@ -6,10 +6,10 @@ import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
 
 export default async function Home() {
-  const listing = await getListings();
+  const listings = await getListings();
   const currentUser = await getCurrentUser();
 
-  if (listing.length === 0) {
+  if (listings.length === 0) {
     return (
       <ClientOnly>
         <EmptyState showReset />
@@ -33,7 +33,7 @@ export default async function Home() {
             gap-8
         "
         >
-          {listing.map((listing: any) => {
+          {listings.map((listing) => {
             return (
               <ListingCard
                 key={listing.id}
