@@ -11,8 +11,8 @@ import getCurrentUser from "./actions/getCurrentUser";
 import SearchModal from "./components/modals/SearchModal";
 
 export const metadata = {
-  title: "Airbnb",
-  description: "Airbnb clone",
+  title: "Airbnb Clone by Adam Benhrima",
+  description: "Airbnb Clone by Adam Benhrima",
 };
 
 const font = Nunito({ subsets: ["latin"] });
