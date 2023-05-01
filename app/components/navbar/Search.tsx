@@ -7,8 +7,6 @@ import { useSearchParams } from "next/navigation";
 import { useMemo } from "react";
 import { BiSearch } from "react-icons/bi";
 
-export const dynamic = "force-dynamic";
-
 const Search = () => {
   const searchModal = useSearchModal();
   const params = useSearchParams();
