@@ -20,6 +20,8 @@ import { FaSkiing } from "react-icons/fa";
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 export const categories = [
   {
     label: "Beach",
